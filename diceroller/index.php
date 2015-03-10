@@ -10,7 +10,7 @@
     <body>
        <div id="wrapper">
            <div class="dice one">
-
+               
            </div>
            <div class="dice two">
 
@@ -21,7 +21,7 @@
            <div class="dice sum">
 
            </div>
-        </div>
+        
         <br>
         <div id="options">
             <form>
@@ -31,6 +31,7 @@
                 <input type="radio" class="radBtn" name="number" value="3">3<br>
                 <input class="formBtn" type="submit" name="roll" value="Roll!">
             </form>
+        </div>
         </div>
     </body>
 </html>

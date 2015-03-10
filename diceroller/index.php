@@ -21,14 +21,12 @@
            <div class="dice sum">
 
            </div>
-        
-        <br>
         <div id="options">
             <form>
                 <p>Amount of dice:</p>
-                <input type="radio" class="radBtn" name="number" value="1">1<br>
-                <input type="radio" class="radBtn" name="number" value="2">2<br>
-                <input type="radio" class="radBtn" name="number" value="3">3<br>
+                <input type="radio" class="radBtn" name="number" value="1">1 die<br>
+                <input type="radio" class="radBtn" name="number" value="2">2 dice<br>
+                <input type="radio" class="radBtn" name="number" value="3">3 dice<br>
                 <input class="formBtn" type="submit" name="roll" value="Roll!">
             </form>
         </div>

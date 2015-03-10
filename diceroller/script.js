@@ -3,23 +3,32 @@ $(document).ready(function() {
     function addListener() {
         //Skicka form när knappen trycks
         $(".formBtn").click(function() {
-            $('form').submit(function(event) {
-                event.preventDefault();
-            });
+            console.log("Jag funkar!");
+            getData();
+            rollDice(nrDice);
         });
-    }
-    
-    function rollDice() {
 
+        $('form').submit(function(event) {
+            event.preventDefault();
+        });
+
+    }
+
+    function rollDice(nrDice) {
+        console.log(nrDice);
+        var numbers = [];
+        for (var i = 0; i < nrDice; i++) {
+            numbers[i] = Math.floor((Math.random() * 6) + 1);
+        }
+        console.log(numbers);
+        return(numbers);
     }
     ;
-    function getData() {
-
+    function getData() { 
+        var nrDice = 3;
+        return(nrDice);
     }
-    function calcSum(diceAmount, diceOne, diceTwo, diceThree){
+    function calcSum(diceAmount, diceOne, diceTwo, diceThree) {
 
     }
 });
-
-
-

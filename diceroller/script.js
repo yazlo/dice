@@ -3,9 +3,8 @@ $(document).ready(function() {
     function addListener() {
         //Skicka form när knappen trycks
         $(".formBtn").click(function() {
-            console.log("Jag funkar!");
-            getData();
-            rollDice(nrDice);
+            var numbers = rollDice(getData());
+            write(numbers);
         });
 
         $('form').submit(function(event) {
@@ -15,20 +14,33 @@ $(document).ready(function() {
     }
 
     function rollDice(nrDice) {
-        console.log(nrDice);
         var numbers = [];
         for (var i = 0; i < nrDice; i++) {
             numbers[i] = Math.floor((Math.random() * 6) + 1);
         }
-        console.log(numbers);
         return(numbers);
     }
     ;
-    function getData() { 
-        var nrDice = 3;
+    function getData() {
+        var nrDice = $(".radBtn:checked").val();
         return(nrDice);
     }
     function calcSum(diceAmount, diceOne, diceTwo, diceThree) {
 
+    }
+    function write(numbers) {
+        $(".box,.sum").remove();
+        $.each(numbers, function(index, value) {
+            $("#wrapper").append(
+                    "<div class='box'>" + value + "</div>"
+                    );
+        });
+        var total = 0;
+        for (var i = 0; i < numbers.length; i++) {
+            total += numbers[i] << 0;
+        }
+        $("#wrapper").append(
+                "<p class='sum none'>Summa:</p><div class='dice sum'>" + total + "</div>"
+                );
     }
 });

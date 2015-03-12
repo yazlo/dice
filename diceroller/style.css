@@ -1,10 +1,46 @@
 #wrapper{
-    width: 400px;
+    width: 500px;
     margin: 100px auto;
+    overflow:auto;
 }
 *{
     background:pink;
     font-family: comic sans ms;
     font-weight: bolder;
     font-style: italic;
+    padding:0;
+    margin:0;
+}
+.box{
+    padding:30px 35px;
+    border: solid black 5px;
+    float:left;
+    margin:5px 5px 0 0;
+    background:white;
+}
+.sum{
+    padding:30px 35px;
+    border: solid turquoise 5px;
+    width:10px;
+    margin:5px 5px 0 0;    
+    width:10px;
+    margin:5px 5px 0 0;
+    background:linear-gradient(yellow, white,yellow);
+    color:white;
+    float:right;
+}
+.formBtn{
+    padding:5px 20px;
+    margin:10px 0;
+}
+.radBtn{
+    margin:10px 0;
+}
+.none{
+    padding:0;
+    margin:0;
+    border:none;
+    width:0;
+    color:black;
+    float:left;
 }

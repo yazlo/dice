@@ -9,21 +9,10 @@
     </head>
     <body>
        <div id="wrapper">
-           <div class="dice one">
-               
-           </div>
-           <div class="dice two">
-
-           </div>
-           <div class="dice three">
-
-           </div>
-           <div class="dice sum">
-
-           </div>
         <div id="options">
             <form>
                 <p>Amount of dice:</p>
+                <br>
                 <input type="radio" class="radBtn" name="number" value="1">1 die<br>
                 <input type="radio" class="radBtn" name="number" value="2">2 dice<br>
                 <input type="radio" class="radBtn" name="number" value="3">3 dice<br>
